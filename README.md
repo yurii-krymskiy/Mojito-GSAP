@@ -1,69 +1,94 @@
-# React + TypeScript + Vite
+# 🍹 GSAP Cocktails — Scroll-Driven Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, animation-rich cocktail website powered by **GSAP**, **React**, and **Tailwind CSS**. This landing page delivers a cinematic, scroll-synced experience with **SplitText reveals**, **parallax effects**, **pinned sections**, **scroll-triggered video**, and a **custom animated carousel** — all while staying responsive across devices.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🤖 Introduction
 
-## Expanding the ESLint configuration
+Craft a stunning, scroll-powered website experience with GSAP’s animation tools:
+- Reveal text with **SplitText** animations
+- Animate UI on scroll using **ScrollTrigger**
+- Create immersive depth via **parallax**
+- Pin content for cinematic section reveals
+- Sync video playback with scroll position
+- Use scroll-based **image masking transitions**
+- Build custom, scroll-animated **carousels**
+- Orchestrate seamless timelines across sections
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+All built with a fully **responsive design** that adapts across screens, optimized for performance, and styled with Tailwind.
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ⚙️ Tech Stack
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Tech         | Description                                                                 |
+|--------------|-----------------------------------------------------------------------------|
+| **GSAP**     | Animation library for performant, complex scroll and timeline animations    |
+| **React**    | Declarative UI library for modular, component-based structure               |
+| **Tailwind** | Utility-first CSS framework for flexible and fast styling                   |
+| **Vite**     | Blazing-fast dev server with instant hot reload and minimal config          |
+
+---
+
+## 🔋 Key Features
+
+✅ **SplitText Animations**  
+Bold, dynamic text reveals using `gsap/SplitText`.
+
+✅ **ScrollTrigger Timeline Control**  
+Control scroll-based animations and link them to progress timelines.
+
+✅ **Parallax Scrolling**  
+Add depth and motion with scroll-based movement.
+
+✅ **Pinned Sections**  
+Fix sections in place while animating content around them.
+
+✅ **Scroll-Synced Video Playback**  
+Sync video’s `currentTime` to scroll position for storytelling effects.
+
+✅ **Image Masking Effects**  
+Use scroll to reveal masked content in bold, visual transitions.
+
+✅ **Custom Carousel**  
+Fully customized carousel with animated transitions and multi-device support.
+
+✅ **Seamless Timeline Animations**  
+Create smooth timelines across sections using GSAP.
+
+✅ **Responsive Design**  
+Mobile-first layout and adaptive animations on all screen sizes.
+
+---
+
+🤸 Quick Start
+Follow these steps to set up the project locally on your machine.
+
+Prerequisites
+
+Make sure you have the following installed on your machine:
+
+Git
+Node.js
+npm (Node Package Manager)
+Cloning the Repository
+```
+git clone https://github.com/yurii-krymskiy/Mojito-GSAP.git
+cd gsap_cocktails
+```
+Installation
+
+Install the project dependencies using npm:
+```
+npm install
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Running the Project
 ```
+npm run dev
+```
+
+Open http://localhost:5173 in your browser to view the project.
+
+
