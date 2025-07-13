@@ -1,5 +1,5 @@
 import { useGSAP } from "@gsap/react";
-import React, { useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { allCocktails } from "../../constants";
 import gsap from "gsap";
 
